@@ -1,7 +1,7 @@
 function Led_anzeige () {
     if (Feuchtigkeit <= 8) {
         basic.setLedColor(0x0000ff)
-    } else if (Feuchtigkeit >= 100) {
+    } else if (Feuchtigkeit >= 400) {
         basic.setLedColor(0xff0000)
     } else {
         basic.setLedColor(0x00ff00)
