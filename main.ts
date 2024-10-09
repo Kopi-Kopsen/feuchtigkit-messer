@@ -1,4 +1,5 @@
 let Feuchtigkeit = 0
+basic.setLedColor(0xffff00)
 basic.forever(function () {
     Feuchtigkeit = pins.analogReadPin(AnalogPin.P1)
     if (pins.digitalReadPin(DigitalPin.P0) == 1) {
