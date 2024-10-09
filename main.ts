@@ -4,6 +4,15 @@ basic.forever(function () {
     if (pins.digitalReadPin(DigitalPin.P0) == 1) {
         basic.showNumber(Feuchtigkeit)
     }
+    basic.pause(2000)
+    basic.setLedColor(0xffff00)
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
 })
 basic.forever(function () {
     if (Feuchtigkeit <= 8) {
